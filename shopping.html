@@ -10,16 +10,45 @@
             integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="navbar">
- 
-  <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact Informatiom</a>
-  <a href="search.html"><i class="fa fa-fw fa-search"></i> Search</a>
-  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
- 
- 
+    <a href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="Search.html"><i class="fa fa-fw fa-search"></i>Search</a>
+    <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Categories
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Kurthas</a>
+      <a href="#">Shoes</a>
+      <a href="#">T-shirts</a>
+    <a href="#">Jeans</a>
+    <a href="#">Jewellery</a>
+    <a href="#">Hand-bags</a>
+    <a href="#">Watches</a>
+    <a href="#">Groceries</a>
+    </div>
+    </div> 
+    <a href="login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+  </div>
+  <script>
+  
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script> 
 </div>
 <h1 class="name">ONLINE STORE</h1>
 <img src="C:\Users\KSwapna\Downloads\shopping-online-on-website-vector.jpg" class="image">
@@ -36,6 +65,7 @@
    <div class="price">Starting price:50</div>
 <button class="btn">Buy Now</button>
   </div>
+  <button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -45,6 +75,7 @@
    <div class="price">Starting Price:199</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -54,6 +85,7 @@
    <div class="price">Starting Price:300</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -63,6 +95,7 @@
    <div class="price">Starting Price:299</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -72,6 +105,7 @@
    <div class="price">Starting Price:149</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -81,6 +115,7 @@
    <div class="price">Starting Price:99</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -90,6 +125,7 @@
    <div class="price">Starting Price:99</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -99,6 +135,7 @@
    <div class="price">Starting Price:199</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 </div>
@@ -116,6 +153,7 @@
    <div class="price">40% Off</div>
 <button class="btn">Buy Now</button>
   </div>
+  <button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -125,6 +163,7 @@
    <div class="price">30% Off</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -134,6 +173,7 @@
    <div class="price">30% Off</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -143,6 +183,7 @@
    <div class="price">20% Off</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -152,6 +193,7 @@
    <div class="price">40% Off</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -161,6 +203,7 @@
    <div class="price">15% Off</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -170,6 +213,7 @@
    <div class="price">20% Off</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -179,14 +223,21 @@
    <div class="price">35% Off</div>
 <button class="btn">Buy Now</button>
 </div>
+<button class="cart">Add to Cart</button>
 </div>
 
 </div>
 </section>
+<center>
+  <div style="background-color:#292929;height:125px;padding:75px;">
+  <p style="font-size:25px; color:white;">Join us on</p>
+  <a href="#" class="fa fa-facebook" style="text-decoration:none; padding:15px; border-radius:50%;"></a>
+  <a href="#" class="fa fa-twitter" style="text-decoration:none; padding:15px; border-radius:50%"></a>
+  <a href="#" class="fa fa-google" style="text-decoration:none;padding:15px; border-radius:50%"></a>
+  <a href="#" class="fa fa-whatsapp" style="text-decoration:none;padding:15px; border-radius:50%"></a>
+  <a href="#" class="fa fa-instagram" style="text-decoration:none;padding:15px; border-radius:50%"></a>
+  <p style="color:white;font-size:25px;">Copyrights at <a href="">Online Store</a></p>
+  </div>
+</center>
 </body>
 </html>
-
-
-
-
- 
