@@ -1,1 +1,1 @@
-Deployment link:/C:/Users/KSwapna/OneDrive/Pictures/Desktop/shopping.html
+Deployment link:https://sreeswapna93.github.io/Digital-Bhem/
